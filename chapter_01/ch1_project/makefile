@@ -2,6 +2,7 @@ time_test.exe : main.obj name.obj time.obj utils.obj
   link /out:$@ $**
   
 clean :
+  @echo Cleaning project files...
   rm main.obj name.obj time.obj utils.obj utils.pch
   rm time_test.exe
 
